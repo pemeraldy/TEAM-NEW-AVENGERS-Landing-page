@@ -13,6 +13,7 @@
 * all js files goes into the <pre><code> js/custom-js/</code></pre> folder
 * Please leave the bootstrap files as is, avoid modifying to them.
 
+
 This process here should be able to guide you on how to contribute effectively to this project, follow the steps below. You should not be new to the git workflow process however if you still are, the guide should still be able to help you through the process.
 
 ### Develop is the default branch.
@@ -31,7 +32,6 @@ This process here should be able to guide you on how to contribute effectively t
     git remote add upstream https://github.com/hngi/TEAM-NEW-AVENGERS-Landing-page.git
     ```
 * Create a branch FROM develop, ALWAYS CREATE YOUR BRANCH FROM DEVELOP,
-the branch name should at least be meaningful.
 
     ```
     git checkout -b (name-of-branch)
@@ -59,6 +59,3 @@ Write good commit messages, this is very important, so people reviewing can know
 
 Make your Pull request from that branch of your repo to the develop branch of this (the HNG) repo and wait for it to be merged.
 
-
-
-### Happy hacking!!!!
