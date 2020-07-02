@@ -1,0 +1,512 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;1,700&display=swap');
+
+:root{
+    --color-btn: #3A8678;
+    --section-bg: rgba(1, 54, 66, 0.05);
+    --headert-text: #013642;
+    --paragraph: rgba(34, 34, 34, 0.67);
+    --footer: rgba(1, 54, 66, 0.6);
+}
+*{
+    font-weight: 'Nunito', sans-serif;
+}
+section{
+    overflow-x: hidden;
+}
+
+
+body{
+    font-family: 'Nunito', sans-serif;
+    background-color: rgba(250, 250, 250, 0.61);
+}
+header{    
+    background: linear-gradient(rgba(255,255,255,0.61), rgba(255,255,255,0.61)) , url(/images/lp-12/header-min.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+header .header-content{    
+    padding-top: 200px;
+    height: 100%;
+}
+header .header-content h1{
+    color:var(--headert-text);
+    font-size: 56px;
+    font-weight: bold;
+    color: var(--headert-text)
+}
+header .header-content p{
+    font-size: 24px;
+    font-weight: 300;
+    color:var(--paragraph);
+}
+
+header .nav-wrap{
+    padding: 2rem 4rem;
+    overflow-x: hidden;
+}
+header .navbar.navbar-expand-lg.bg-light{
+    background-color: transparent !important;
+}
+header .navbar-nav .nav-item .nav-link{
+    font-size: 16px;
+    font-weight: bold;
+}
+header .navbar-nav .nav-item{
+    margin: 0 20px;
+}
+header .navbar-nav .nav-item.active .nav-link{
+    color: var(--color-btn)
+}
+header .navbar-nav .nav-item .nav-link{
+    color: var(--headert-text)
+}
+header .form-inline a.btn{
+    background-color: var(--color-btn);
+    color: #fff;
+    border: solid var(--color-btn)
+}
+.header-btn--wrap{
+    justify-content: center;
+}
+.header-btn--wrap a{
+    margin: 10px;
+}
+.header-btn--wrap a.btn.btn-view-demo{
+    border: 2px solid var(--color-btn) !important;
+    color: var(--color-btn);
+    background: transparent;
+    font-weight: bold;
+    width:150px ;
+    padding: 10px
+}
+.header-btn--wrap a.btn.btn-success{
+    width:150px ;
+    padding: 10px;
+    color: #fff;
+    background-color: var(--color-btn);
+    border: 0;
+}
+
+
+.partners .partner-wrap{
+    list-style: none;
+    /* background-color: #fff; */
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.partners .partner{
+    width: 150px;
+    height: 50px;
+    
+}
+
+/* Theme nav collections */
+.theme-navs{
+    margin-top: 100px;
+}
+
+
+.theme-navs h1{
+    font-size: 40px;
+    color: var(--headert-text);
+    font-weight: 600;
+}
+.theme-navs p{
+    font-weight: 300;
+    font-size: 24px;
+    color: var(--paragraph);
+    /* line-height: 33px; */
+}
+
+.theme-navs .card{
+    border: 0;
+    border-radius: 0;
+    transition: box-shadow 0.3s ease-in-out;
+}
+.theme-navs .card:hover{
+    box-shadow:  0px 2px 48px rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+}
+.theme-navs .card p{
+    font-size: 24px;
+    font-weight: normal;
+    color: var(--headert-text);
+}
+
+/* Ultimate section */
+.ultimate{
+    margin-top: 80px;
+}
+.ultimate .ultimate-intro h1{
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--headert-text);
+}
+.ultimate .ultimate-intro p{
+    font-size: 24px;
+    font-weight: 300;
+    color: var(--paragraph);
+    padding: 0 189px;
+    margin: 28px auto;
+}
+
+.ultimate-bg, .features{
+    background-color: var(--section-bg);
+    padding-top: 70px;
+}
+
+
+.ultimate .card-ultimate{    
+    height:400px;
+    padding: 34px 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 0;
+    transition: box-shadow 0.3s ease-in;
+}
+.ultimate .card-ultimate:hover{
+    box-shadow:0px 2px 48px rgba(0, 0, 0, 0.1); ;
+}
+.ultimate .card-ultimate img{
+    margin:0 auto; 
+    width: 80px;
+    height: 80px;
+ 
+}
+.ultimate .card-ultimate .card-body{
+    padding: 0;
+}
+.ultimate .card-ultimate h4{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--headert-text);
+    margin: 20px 0
+}
+.ultimate .card-ultimate p{
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--headert-text);
+    text-align: center;
+}
+
+.ultimate .card-ultimate p.learn-more{
+    position: relative;
+    bottom: -26%;
+}
+.ultimate .card-ultimate p a{
+    color:var(--headert-text);
+    text-decoration: none;
+}
+
+/* Features section */
+.features{
+    width: 100%;
+}
+
+.features .feat-content-right{
+    padding-left:46px;
+    padding-top: 45px;
+
+}
+
+.features .feat-content-right h1, .features .feat-content-left h1{
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--headert-text);
+}
+.features .feat-content-left{
+    padding-top:66px;
+}
+.feat-content-right p, .feat-content-left p{
+    margin-top: 16px;
+    font-weight: 300;
+    font-size: 24px;
+}
+.features .feat-icon{
+    width: 88px;
+    height: 84px;
+}
+.feat-content-right .btn.btn-primary{
+    background-color: var(--color-btn);
+    border: solid var(--color-btn)
+}
+.feat-content-left .btn.btn-primary{
+    background-color: var(--color-btn);
+    border: solid var(--color-btn)
+}
+
+/* Pricing */
+.pricing{
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 71px;
+}
+.pricing h1{
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--headert-text)
+}
+.pricing p{
+    margin-top: 15px;
+    font-size: 24px;
+    font-weight: 24px;
+    color: var(--paragraph);
+    padding: 0 190px;
+}
+
+
+/* price-cards */
+.price-cards{
+    width: 100%;
+    background-color: var(--section-bg);
+    padding: 50px 0;
+}
+
+.price-cards .card{
+    margin: 0 auto;
+    border: 0;
+    text-align: center;
+    padding: 64px 40px;
+}
+.price-cards .card .card-body{
+    padding: 0;
+}
+.price-cards .card .card-body h5{
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--headert-text)
+}
+.price-cards .card .list-group li.list-group-item{
+    padding: 0;
+    font-size: 18px;
+    font-weight: normal;
+    color: #222222
+}
+.price-cards hr{
+    margin: 10px auto 20px auto;
+}
+
+.price-cards .card.price-business{
+    background-color: var(--color-btn);
+}
+.card.price-business h5.card-title{
+    color: #fff;
+}
+.card.price-business .list-group.list-group-flush hr{
+    border-top: 1px solid #ffff !important;
+} 
+.price-cards .card.price-business .list-group li.list-group-item{
+    color: #fff;
+    background-color: var(--color-btn);
+}
+.price-cards .card.price-business .card-body a.btn.btn-primary{
+    background-color: #fff;
+    color: var(--headert-text);
+    border: solid var(--color-btn);
+    width: 120px;
+}
+.price-cards .card-body a.btn.btn-primary{
+    background-color: var(--color-btn);
+    border: solid var(--color-btn);
+    width: 120px;
+}
+
+.list-group-item.cost{
+    font-size: 24px !important;
+    font-weight: 600;
+}
+
+
+/* happy clients */
+.happy-clients{
+    width: 100%;
+} 
+.happy-clients h1{
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--headert-text)
+}
+
+.happy-clients p{
+    font-size: 24px;
+    font-weight: 300;
+    color: var(--paragraph)
+}
+.happy-clients .card{
+    background-color:rgba(1, 54, 66, 0.05);
+    border-radius: 4px;
+    border: 0;
+}
+.happy-clients .card .card-body h5{
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+}
+.happy-clients .card .card-body p{
+    margin: 3px;
+}
+.happy-clients .card .card-body .card-text{
+    font-size: 16px;
+}
+.happy-clients .card .card-body .img-wrap{
+    width: 38px;
+    height: 37px;
+    margin-left: -21px;
+}
+.happy-clients .card .rating .stars p{
+    font-size: 14px;
+}
+.happy-clients .card .card-body .rating{
+    justify-content: center;
+}
+
+footer{
+    background-color: var(--footer);
+    padding: 130px  100px;
+}
+footer h1{
+    color: #fff;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+footer a.btn.btn-outline-success{
+    color: #fff;
+    font-size: 24px;
+    border: solid #fff !important;
+    width: 143px;
+    line-height: 47px;   
+}
+
+
+
+
+/*** Responsiveness**** */
+@media only screen and (min-width:320px) and (max-width: 322px) {
+    .partners .partner-wrap{
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -20px;
+  }
+  .partner-wrap .partner{
+      margin:-13px;
+      padding:30px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+    header{
+        background-position: 60%;
+    }
+    header .nav-wrap{
+      padding: 0;
+  }
+
+  .navbar-light .navbar-toggler{
+      color: transparent;
+      border-color: transparent;
+  }
+  header .header-content{
+      padding-top: 122px;
+  }
+  header .header-content h1{
+      font-size: 24px;
+      font-weight: bolder;
+  }
+  header .header-content {
+      font-size: 14px;
+      /* font-weight: bolder; */
+  }
+  .partners .partner-wrap{
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -20px;
+  }
+  .partner-wrap .partner{
+      
+      margin:-3px;
+      padding:13px;
+  }
+  .theme-navs{
+    margin-top: 64px;
+  }
+  .theme-navs h1{
+      font-size: 24px;
+  }
+  .theme-navs p{
+      font-size: 14px;
+  }
+  .ultimate .ultimate-intro h1{
+      font-size: 24px;
+      font-weight: 600;
+
+  }
+  .ultimate .ultimate-intro p{
+      font-size: 14px;
+      font-weight: 300;
+      padding:0;
+  }
+  .features .feat-content-right{
+      padding-left: 0;
+  }
+  .features .feat-content-right h1{
+      font-size: 24px;
+      font-weight: 600;
+  }
+  .features .feat-content-left h1{
+      font-size: 24px;
+      font-weight: 600;
+  }
+
+  .pricing p{
+      padding: 0;
+  }
+  .price-cards .card{
+      margin-bottom: 25px
+  }
+  .happy-clients .card{
+      margin-bottom: 25px
+  }
+
+  footer .footer-content{
+      flex-direction: column !important;
+      /* padding: 20px; */
+  }
+  footer h1{
+      font-size: 20px;
+
+  }
+  footer a.btn{
+      display:block;
+      margin: 31px auto;
+  }
+}
+
+@media only screen and (min-width:1440px) and (max-width: 1440px) {
+    header{
+        background-position: center;
+    }
+    header .nav-wrap{
+      padding: 29px;
+  }
+}
+
+
+@media only screen and (min-width:320px) and (max-width: 322px) {
+    .partners .partner-wrap{
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -20px;
+  }
+  .partner-wrap .partner{
+      margin:-13px;
+      padding:30px;
+  }
+}
